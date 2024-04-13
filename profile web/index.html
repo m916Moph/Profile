@@ -1,0 +1,96 @@
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>profile</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="_reset.css" />
+   
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" />
+
+    <!-- <link rel="stylesheet" href="styles/style.css" /> -->
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script defer src="scripts/main.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css" />
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script defer src="scripts/main.js"></script>
+    <script type='module' src='https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js'></script>
+    <script nomodule src='https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js'></script>
+</head>
+
+<body>
+    <script src="main.js"></script>
+</body>
+<header>
+    <a class="top-link" href="/"><img src="images/dog-icon.svg" /></a>
+    <nav>
+        <a class="nav-link" href="#profile">Profile</a>
+        <a class="nav-link" href="#favorite">Favorite</a>
+        <a class="nav-link" href="#3dobject">3D Object</a>
+    </nav>
+</header>
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/slide/cherry-blossom.jpg" /></div>
+        <div class="swiper-slide"><img src="images/slide/morning-pine.jpg" /></div>
+        <div class="swiper-slide"><img src="images/slide/mountain-tops.jpg" /></div>
+        <div class="swiper-slide"><img src="images/slide/sea-and-ball.jpg" /></div>
+    </div>
+    <h1 class="top-title">Hello! I'm Morphe.</h1>
+</div>
+</html>
+
+<section class="profile" id="profile">
+    <h2 class="section-title">Profile</h2>
+    <div class="container">
+        <img class="profile-images"src="images/profile.png" alt="profile-photo" />
+        <div class="profile-text">
+            <div class="profile-sentence">
+                <h3>m916 Morphe</h3>
+                <p>私は中学生で、アーチェリーをしたり、プログラミングの勉強をしたり、学校に行ったりして生きています。◀︎えらい</p>
+            </div>
+        </div>
+       
+    </div>
+</section>
+
+<section class="favorite" id="favorite">
+    <h2 class="section-title">Favorite</h2>
+    <div class="container">
+        <div class="item">
+            <h3 class="item-title">Programming</h3>
+            <img class="item-cover" src="images/favorite/Programming.jpg" />
+            <p>今まではゲーム（unity）の勉強をしていましたが、今はwebの勉強をしています。
+        </div>
+
+        <div class="item">
+            <h3 class="item-title">Modeling</h3>
+            <img class="item-cover" src="images/favorite/Modeling.jpg" />
+            <p>メタバースヨコスカEDUCATIONでBlenderを始めました。</p>
+        </div>
+        
+    </div>
+</section>
+
+<section class="3dobject" id="3dobject">
+    <h2 class="section-title">3D Object</h2>
+    <div class="container">
+        <div class="item">
+            <h3 class="item-title">Apple</h3>
+            <model-viewer
+            src=3dobjects/apple.gltf
+            alt="apple 3Dmodel"
+            ar
+            camera-controls
+            autoplay
+            shadow-intensity="1"
+            exposure="0.5"
+          ></model-viewer>
+        </div>
+    </div>
+</section
